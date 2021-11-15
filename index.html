@@ -1,43 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>st4rb4r-Portfolio</title>
-    <style>
-        .title {
-            font-family: monospace;
-            font-size: 48px;
-            margin-left: 15px;
-            margin-top: 10px;
-        }
-        img {
-            height: 200px;
-            border-style:solid;
-            border-color: darkgray;
-        }
-        h1 {
-            font-family: monospace;
-            font-size: 32px;
-            font-weight: 500;
-        }
-        p {
-            font-family: monospace;
-        }
-    </style>
-</head>
-<body>
-    <p class="title"></p.>./@st4rb4r/</p>
-    <img src="images/layout.png" alt="layout image &copy;2021 @st4rb4r">
-    <h1> ABOUT:</h1>
-    <p><strong>&lt;St4rb4r&gt;</strong> is a programmer and an artist based in Louisiana, he is 
-        currently working on... projects? Idk man this is really bad html.</p>
-    <h1>LINKS:</h1>
-    <a href="https://github.com/st4rb4rs">Github</a>
-    <br>
-    <a href="https://www.instagram.com/st4rb4r">Instagram</a>
-    <br>
-    <a href="pages/about.html">Next</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>st4rb4r-portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="mode-tog"></div>
+    <div class="container">
+        <div class="light-mode"></div>
+    </div>
+
+    <h1 class="glitch">st4rb4r</h1>
+
+    <script>
+        let modeToggle = document.querySelector('mode-tog');
+        let lightMode = document.querySelector('light-mode');
+        modeToggle.addEventListener('click', () =>{
+            lightMode.classList.toggle('active');
+            modeToggle.classList.toggle('active');
+        })
+    </script>
+  </body>
 </html>
