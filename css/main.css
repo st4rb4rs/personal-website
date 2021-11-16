@@ -19,12 +19,12 @@ h1 {
     padding: 0;
     text-align: center;
     position: absolute;
-    top: 35%;
+    top: 5rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.about {
+.code {
     font-size: 3rem;
     position: absolute;
     color: white;
@@ -47,7 +47,16 @@ h1 {
     position: absolute;
     color: white;
     top: 1%;
-    left: 28%;
+    left: 24%;
+}
+
+.p1 {
+    text-align: center;
+    margin: 50vmax;
+    transform: translateX(-50%);
+    margin-top: 12rem;
+    width: 40vmax;
+    background-color: black;
 }
 
 
@@ -90,4 +99,15 @@ h1 {
       -0.025em  -0.05em 0 rgba(0,255,0,.75),
       -0.05em 0.05em 0 rgba(0, 247, 255, 0.75);
     }
+}
+
+.footbg {
+    position: absolute;
+    bottom: 5px;
+    width: 100vmax;
+    height: 8.5rem;
+    background-color: rgba(0,0,0, 0.25);
+    border-style: solid;
+    border-color: #222;
+    border-radius: 2.25rem;
 }
