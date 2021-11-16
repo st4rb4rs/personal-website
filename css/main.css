@@ -25,6 +25,8 @@ h1 {
 }
 
 .code {
+    color: lime;
+    transition: 0.3s ease-in;
     font-size: 3rem;
     position: absolute;
     color: white;
@@ -32,17 +34,22 @@ h1 {
     left: 3%;
 }
 
+.code:hover {
+    color: lime;
+    transition: 0.3s ease-in;
+}
+
 .headbg {
     position: absolute;
     width: 100vmax;
     height: 4.5rem;
     background-color: rgba(0,0,0, 0.25);
-    border-style: solid;
-    border-color: #222;
     border-radius: 2.25rem;
 }
 
 .art {
+    color: palevioletred;
+    transition: 0.3s ease-out;
     font-size: 3rem;
     position: absolute;
     color: white;
@@ -50,13 +57,33 @@ h1 {
     left: 24%;
 }
 
-.p1 {
-    text-align: center;
-    margin: 50vmax;
+.art:hover {
+    color: palevioletred;
+    transition: 0.3s ease-out;
+}
+
+.animated {
+    box-shadow: 0.5em -0.5em 0 black;
+    transition: 0.3s ease-in-out;
+    color: white;
+    position: absolute;
+    top: 220px;
+    left: 50%;
     transform: translateX(-50%);
-    margin-top: 12rem;
-    width: 40vmax;
-    background-color: black;
+    width: 300px;
+    background-color:#222;
+    z-index: 4;
+    box-shadow: 0 0 0 black;
+    border-radius: 10px;
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+.animated:hover {
+    box-shadow: -0.5em 0.5em 0 black;
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -107,7 +134,5 @@ h1 {
     width: 100vmax;
     height: 8.5rem;
     background-color: rgba(0,0,0, 0.25);
-    border-style: solid;
-    border-color: #222;
     border-radius: 2.25rem;
 }
