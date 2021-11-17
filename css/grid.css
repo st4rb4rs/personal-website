@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+    background-color: #111;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 75px 1fr 1fr 100px;
+    gap: 10px;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+
+.container div {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.content1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
