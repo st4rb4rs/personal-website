@@ -39,8 +39,8 @@ body {
 
 .title {
     text-align: center;
-    margin: 0;
-    font-size: 6rem;
+    margin: 10px 0px;
+    font-size: 3rem;
     color: #ee6352;
     line-height: .8;
 }
