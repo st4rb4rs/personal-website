@@ -60,7 +60,7 @@ button {
 
 .transitionbox {
     width: 100vh;
-    height: 350vw;
+    height: 359vw;
     transform: translateY(500px);
     background: white;
     box-shadow: 0 0 5em rgba(0, 0, 0, 0.55);
