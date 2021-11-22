@@ -59,8 +59,8 @@ button {
 }
 
 .transitionbox {
-    width: 100vw;
-    height: 400vh;
+    width: 100vh;
+    height: 350vw;
     transform: translateY(500px);
     background: white;
     box-shadow: 0 0 5em rgba(0, 0, 0, 0.55);
