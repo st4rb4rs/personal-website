@@ -1,0 +1,123 @@
+@font-face {
+  src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+    format("woff2");
+  font-family: "Meta";
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #202020;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+
+header a {
+  transition: ease 0.3s;
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+a.text {
+    transform: translateY(-30px);
+    margin-left: 4vw;
+    font-size: 2vw;
+}
+
+
+.header {
+  width: 100vw;
+  height: 75px;
+  justify-content: center;
+  background: black;
+  box-shadow: 0em 1em 30px rgba(0, 0, 0, 0.5);
+}
+
+.container1 {
+  width: 100vw;
+  height: 40vh;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container2 {
+    width: 80vw;
+    height: 1000px;
+    margin-left: 10vw;
+    background-color: #666666;
+    border-radius: 30px;
+    box-shadow: 0 0 100px 20px;
+    animation: breathe 4000ms ease-in-out infinite;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100vw;
+    height: 75px;
+    justify-content: center;
+    background: black;
+    box-shadow: 0em 1em 30px rgba(0, 0, 0, 0.5);
+  }
+
+main {
+  transition: all 0.5s;
+  -webkit-text-stroke: 2px #d6f4f4;
+  font-variation-settings: "wght" 900, "ital" 1;
+  font-size: 16vw;
+  text-align: center;
+  color: transparent;
+  font-family: "Meta", sans-serif;
+  text-shadow: 10px 10px 0px #000000, 15px 15px 0px #2e2e2e,
+    20px 20px 0px #5f5f5f, 25px 25px 0px #d8d8d8,
+    45px 45px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  animation: tilt 2000ms ease-in-out infinite;
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes breathe {
+    0% {
+      transform: rotate(-1deg);
+      box-shadow: 0 0 100px 20px, inset 0 0 0 10px;
+    }
+    50% {
+      transform: rotate(1deg);
+      box-shadow: 0 0 100px 20px, inset 0 0 0 1px;
+    }
+    100% {
+      transform: rotate(-1deg);
+      box-shadow: 0 0 100px 20px, inset 0 0 0 10px;
+    }
+  }
+
+main:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
+  -webkit-text-stroke: 2px crimson;
+  cursor: crosshair;
+}
+
+header a:hover {
+    transform: scale(1.2) translateY(-30px);
+    color: crimson;
+    cursor: crosshair;
+}
