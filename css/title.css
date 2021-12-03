@@ -70,6 +70,7 @@ a.text {
   background: rgba(255, 255, 255, 0.4);
   border-radius: 30px;
   box-shadow: 0 0 0 2px white;
+  animation: stabilize 4000ms ease-in-out infinite;
 }
 
 .about:hover {
@@ -101,48 +102,55 @@ main {
 @keyframes textfly {
   0% {
     -webkit-text-stroke: 3px #ffffff;
-    text-shadow: 20px 20px 0px #5f5f5f,
-     45px 45px 10px rgba(0, 0, 0, 0.5);
-     transform: rotate(-5deg);
+    text-shadow: 20px 20px 0px #5f5f5f, 45px 45px 10px rgba(0, 0, 0, 0.5);
+    transform: rotate(-5deg);
   }
   20% {
     -webkit-text-stroke: 3px #ffffff;
   }
   25% {
     -webkit-text-stroke: 3px black;
-    text-shadow: 0px 0px 0px #ffffff,
-     35px 45px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 0px #ffffff, 35px 45px 10px rgba(0, 0, 0, 0.5);
   }
   50% {
-    text-shadow: -20px -20px 0px #5f5f5f,
-     25px 45px 10px rgba(0, 0, 0, 0.5);
-     transform: rotate(5deg);
+    text-shadow: -20px -20px 0px #5f5f5f, 25px 45px 10px rgba(0, 0, 0, 0.5);
+    transform: rotate(5deg);
   }
   70% {
     -webkit-text-stroke: 3px #000000;
   }
   75% {
     -webkit-text-stroke: 3px white;
-    text-shadow: 0px 0px 0px #000000,
-     35px 45px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 0px #000000, 35px 45px 10px rgba(0, 0, 0, 0.5);
   }
   100% {
     -webkit-text-stroke: 3px #ffffff;
-    text-shadow: 20px 20px 0px #5f5f5f,
-     45px 45px 10px rgba(0, 0, 0, 0.5);
-     transform: rotate(-5deg);
+    text-shadow: 20px 20px 0px #5f5f5f, 45px 45px 10px rgba(0, 0, 0, 0.5);
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes stabilize {
+  0% {
+    transform: rotate(3deg) translateY(20px);
+  }
+  50% {
+    transform: rotate(-3deg) translateY(20px);
+  }
+  100% {
+    transform: rotate(3deg) translateY(20px);
   }
 }
 
 @keyframes breathe {
   0% {
-    transform: rotate(-1deg);
+    transform: rotate(-3deg);
   }
   50% {
-    transform: rotate(1deg);
+    transform: rotate(3deg);
   }
   100% {
-    transform: rotate(-1deg);
+    transform: rotate(-3deg);
   }
 }
 
