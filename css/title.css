@@ -59,6 +59,7 @@ a.text {
 }
 
 .about {
+  transition: 0.2s ease-out;
   font-family: "Meta", sans-serif;
   font-variation-settings: "wght" 900, "ital" 1;
   color: black;
@@ -71,6 +72,9 @@ a.text {
   box-shadow: 0 0 0 2px white;
 }
 
+.about:hover {
+  letter-spacing: 1vw;
+}
 
 footer {
   margin-top: 50px;
