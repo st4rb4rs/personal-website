@@ -96,6 +96,7 @@ main {
     color: white;
     text-align: center;
     font-weight: 600;
+    font-size: 5vw;
     padding: 20px;
     text-shadow: 1px 0 0 black, -1px 0px black, 0 1px black, 0 -1px black;
     animation: stabilize 2000ms ease-in-out infinite;
