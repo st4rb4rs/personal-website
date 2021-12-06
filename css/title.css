@@ -49,7 +49,7 @@ a.text {
 
 .container2 {
   width: 80vw;
-  height: 1000px;
+  height: 100vw;
   margin-left: 10vw;
   margin-top: 2vw;
   background-image: url("https://wallpaperaccess.com/full/623055.jpg");
@@ -72,6 +72,53 @@ a.text {
   box-shadow: 0 0 0 2px white;
   animation: stabilize 4000ms ease-in-out infinite;
 }
+
+.about_title {
+  transition: 0.2s ease-out;
+  font-family: "Meta", sans-serif;
+  font-variation-settings: "wght" 900, "ital" 1;
+  color: rgb(100, 100, 100);
+  font-weight: 600;
+  margin: 30px;
+  transform: translateX(1em);
+  text-shadow: 1em 0 0px white;
+  animation: jumptitle 1000ms infinite;
+}
+
+@keyframes jumptitle {
+  0% {
+    text-shadow: 1em 0 0px white;
+  }
+  24% {
+    color: rgb(100, 100, 100);
+    text-shadow: 0 -1em 0px white;
+    transform: translateX(1em);
+  }
+  25% {
+    color: white;
+    text-shadow: 0 1em 0px rgb(100, 100, 100);
+    transform: translateX(1em) translateY(-1em);
+  }
+  50% {
+    transform: translateX(1em);
+    text-shadow: 1em 0 0px rgb(100, 100, 100);
+  }
+  74% {
+    color: white;
+    text-shadow: 0 -1em 0px rgb(100, 100, 100);
+    transform: translateX(1em);
+  }
+  75% {
+    color: rgb(100, 100, 100);
+    text-shadow: 0 1em 0px white;
+    transform: translateX(1em) translateY(-1em);
+  }
+  100% {
+    transform: translateX(1em);
+    text-shadow: 1em 0 0px white;
+  }
+}
+
 
 .about:hover {
   letter-spacing: 1vw;
