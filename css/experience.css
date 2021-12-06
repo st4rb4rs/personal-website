@@ -39,35 +39,6 @@ a.text {
   box-shadow: 0em 1em 30px rgba(0, 0, 0, 0.5);
 }
 
-.container1 {
-  width: 100vw;
-  height: 40vh;
-  margin-top: 30px;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.container2 {
-    width: 80vw;
-    height: 80vw;
-    background-image: url("https://wallpaperaccess.com/full/623055.jpg");
-    margin-left: 9vw;
-    margin-top: -50px;
-    border-radius: 30px;
-    background-position: 10px 10pxs;
-    box-shadow: 0.5em 0.5em 0 black, inset 0 3px 0 black, inset 3px 0 0 black;
-    animation: grid-warp 1000ms ease-in-out infinite;
-}
-
-@keyframes grid-warp {
-  0% {
-    background-position: 10px 10px;
-  }
-  100% {
-    background-position: -80px -80px;
-  }
-}
-
 header a:hover {
   transform: scale(1.2) translateY(-30px);
   color: crimson;
@@ -75,6 +46,7 @@ header a:hover {
 }
 
 main {
+  margin-top: 40px;
   transition: all 0.5s;
   -webkit-text-stroke: 2px #ffffff;
   font-variation-settings: "wght" 900, "ital" 1;
@@ -85,6 +57,52 @@ main {
   text-shadow: 20px 20px 0px #5f5f5f, 45px 45px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   animation: textfly 3000ms ease-in-out infinite;
+}
+
+.bubbleone {
+    width: 60vw;
+    height: 60vh;
+    border-radius: 50%;
+    background-image: url("https://wallpaperaccess.com/full/623055.jpg");
+    box-shadow: inset 5px 5px white, inset -5px -5px white;
+    margin-left: 40vw;
+    margin-top: 30px;
+    animation: bubble 2000ms ease-in-out infinite;
+}
+
+.bubbletxt {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    padding: 20px;
+    text-shadow: 1px 0 0 black, -1px 0px black, 0 1px black, 0 -1px black;
+    animation: stabilize 2000ms ease-in-out infinite;
+}
+
+
+@keyframes stabilize {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes bubble {
+    0% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
 }
 
 .footer {
