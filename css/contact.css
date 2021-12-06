@@ -54,7 +54,8 @@ a.text {
     margin-left: 9vw;
     margin-top: -50px;
     border-radius: 30px;
-    box-shadow: 0.5em 0.5em 0 rgb(59, 59, 59);
+    background-position: 10px 10pxs;
+    box-shadow: 0.5em 0.5em 0 black, inset 0 3px 0 black, inset 3px 0 0 black;
     animation: grid-warp 1000ms infinite;
 }
 
