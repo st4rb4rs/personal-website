@@ -90,30 +90,6 @@ main {
   border-radius: 20px;
 }
 
-@keyframes stabilize {
-    0% {
-        transform: rotate(-5deg);
-    }
-    50% {
-        transform: rotate(5deg);
-    }
-    100% {
-        transform: rotate(-5deg);
-    }
-}
-
-@keyframes bubble {
-    0% {
-        transform: rotate(5deg);
-    }
-    50% {
-        transform: rotate(-5deg);
-    }
-    100% {
-        transform: rotate(5deg);
-    }
-}
-
 .footer {
   transform: translateY(100px);
   margin-top: -40px;
