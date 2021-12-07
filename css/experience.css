@@ -71,14 +71,17 @@ main {
 }
 
 .stack p {
+  position: relative;
   transition: 400ms;
-  margin: 30px;
+  margin-top: -90vw;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   font-size: 4vw;
+  width: 80vw;
+  transform: translateX(10vw);
   color: rgba(0, 0, 0, 0);
-  transform: translateY(-90vw);
   text-align: center;
+  z-index: 100;
 }
 
 .stack p:hover {
@@ -112,6 +115,7 @@ main {
 }
 
 .footer {
+  transform: translateY(100px);
   margin-top: -40px;
   width: 100vw;
   height: 75px;
